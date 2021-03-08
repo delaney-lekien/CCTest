@@ -110,8 +110,12 @@ object Runner {
     val combinedCrawl = rddCrawl.join(combinedCensusData,("State Code"))
     .withColumn("Tech Ads Proportional to Population", round(($"Tech Job Total" / $"Population Estimate Total" * 100) , 8))
     .select($"State Code", $"Geographic Area Name", $"Tech Job Total", $"Population Estimate Total", $"Tech Ads Proportional to Population")
-    .show(51, false)
-  
+
+    val s3OutputBucket = "s3://commoncrawlques1outputbucket/commoncrawl-demo-data"
+
+    combinedCrawl.write.format("csv").mode("overwrite").save(s3OutputBucket)
+
+    spark.close
   }
 
 }
