@@ -34462,3 +34462,729 @@ Starting thread that pumps server stdout and redirects it to the client stdout..
 [0m2021.03.05 14:01:40 INFO  time: Imported build in 0.38s[0m
 [0m2021.03.05 14:01:42 WARN  Could not find java sources in Some(/usr/lib/jvm/java-8-openjdk-amd64). Java symbols will not be available.[0m
 [0m2021.03.05 14:01:42 INFO  time: indexed workspace in 3.51s[0m
+[0m2021.03.05 18:10:34 INFO  shutting down Metals[0m
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+Mar 05, 2021 6:10:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint notify
+INFO: Failed to send notification message.
+org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.nio.channels.ClosedChannelException
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.notify(RemoteEndpoint.java:126)
+	at org.eclipse.lsp4j.jsonrpc.services.EndpointProxy.invoke(EndpointProxy.java:88)
+	at com.sun.proxy.$Proxy9.onBuildExit(Unknown Source)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1(BuildServerConnection.scala:89)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1$adapted(BuildServerConnection.scala:85)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SinkChannelImpl.ensureOpen(SinkChannelImpl.java:154)
+	at sun.nio.ch.SinkChannelImpl.write(SinkChannelImpl.java:158)
+	at java.nio.channels.Channels.writeFullyImpl(Channels.java:78)
+	at java.nio.channels.Channels.writeFully(Channels.java:98)
+	at java.nio.channels.Channels.access$000(Channels.java:61)
+	at java.nio.channels.Channels$1.write(Channels.java:174)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at java.nio.channels.Channels$1.write(Channels.java:155)
+	at scala.meta.internal.metals.ClosableOutputStream.write(ClosableOutputStream.scala:26)
+	at java.io.FilterOutputStream.write(FilterOutputStream.java:125)
+	at java.io.FilterOutputStream.write(FilterOutputStream.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:67)
+	... 14 more
+
+Mar 05, 2021 6:10:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint notify
+INFO: Failed to send notification message.
+org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.nio.channels.ClosedChannelException
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.notify(RemoteEndpoint.java:126)
+	at org.eclipse.lsp4j.jsonrpc.services.EndpointProxy.invoke(EndpointProxy.java:88)
+	at com.sun.proxy.$Proxy9.onBuildExit(Unknown Source)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1(BuildServerConnection.scala:89)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1$adapted(BuildServerConnection.scala:85)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SinkChannelImpl.ensureOpen(SinkChannelImpl.java:154)
+	at sun.nio.ch.SinkChannelImpl.write(SinkChannelImpl.java:158)
+	at java.nio.channels.Channels.writeFullyImpl(Channels.java:78)
+	at java.nio.channels.Channels.writeFully(Channels.java:98)
+	at java.nio.channels.Channels.access$000(Channels.java:61)
+	at java.nio.channels.Channels$1.write(Channels.java:174)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at java.nio.channels.Channels$1.write(Channels.java:155)
+	at scala.meta.internal.metals.ClosableOutputStream.write(ClosableOutputStream.scala:26)
+	at java.io.FilterOutputStream.write(FilterOutputStream.java:125)
+	at java.io.FilterOutputStream.write(FilterOutputStream.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:67)
+	... 14 more
+
+[0m2021.03.05 18:10:34 INFO  Shut down connection with build server.[0m
+Mar 05, 2021 6:10:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint notify
+INFO: Failed to send notification message.
+org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.nio.channels.ClosedChannelException
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.notify(RemoteEndpoint.java:126)
+	at org.eclipse.lsp4j.jsonrpc.services.EndpointProxy.invoke(EndpointProxy.java:88)
+	at com.sun.proxy.$Proxy9.onBuildExit(Unknown Source)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1(BuildServerConnection.scala:89)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1$adapted(BuildServerConnection.scala:85)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SinkChannelImpl.ensureOpen(SinkChannelImpl.java:154)
+	at sun.nio.ch.SinkChannelImpl.write(SinkChannelImpl.java:158)
+	at java.nio.channels.Channels.writeFullyImpl(Channels.java:78)
+	at java.nio.channels.Channels.writeFully(Channels.java:98)
+	at java.nio.channels.Channels.access$000(Channels.java:61)
+	at java.nio.channels.Channels$1.write(Channels.java:174)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at java.nio.channels.Channels$1.write(Channels.java:155)
+	at scala.meta.internal.metals.ClosableOutputStream.write(ClosableOutputStream.scala:26)
+	at java.io.FilterOutputStream.write(FilterOutputStream.java:125)
+	at java.io.FilterOutputStream.write(FilterOutputStream.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:67)
+	... 14 more
+
+[0m2021.03.05 18:10:34 INFO  Shut down connection with build server.[0m
+[0m2021.03.05 18:10:34 INFO  Shut down connection with build server.[0m
+[0m2021.03.08 10:30:34 INFO  Started: Metals version 0.10.0 in workspace '/home/delaneylekien/project3/scalas3read' for client vscode 1.54.1.[0m
+[0m2021.03.08 10:30:35 INFO  time: initialize in 0.52s[0m
+[0m2021.03.08 10:30:35 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher4800353928263832945/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m2021.03.08 10:30:35 WARN  no build target for: /home/delaneylekien/project3/scalas3read/src/main/scala/com/revature/scalas3read/Runner.scala[0m
+[0m2021.03.08 10:30:36 INFO  skipping build import with status 'Installed'[0m
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+[0m2021.03.08 10:30:39 INFO  no build target: using presentation compiler with only scala-library: 2.12.13[0m
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+package com.revature.scalas3read
+
+import org.apache.spark.sql.SparkSession
+import org.apache.spark.sql.types.StructType
+import org.apache.spark.sql.types.StringType
+import org.apache.spark.sql.functions
+import org.apache.spark.sql.types.IntegerType
+import com.google.flatbuffers.Struct
+import org.apache.spark.sql.types.StructField
+import org.apache.spark.sql.Row
+import scala.io.BufferedSource
+import java.io.FileInputStream
+import org.apache.spark.sql.functions.split
+import org.apache.spark.sql.functions.round 
+import java.util.Arrays
+import java.sql
+
+object Runner {
+  def main(args: Array[String]): Unit = {
+    val spark = SparkSession
+      .builder()
+      .appName("scalas3read")
+      .master("local[4]")
+      // .config("spark.debug.maxToStringFields", 100)
+      .getOrCreate()
+
+    // Reference: https://sparkbyexamples.com/spark/spark-read-text-file-from-s3/#s3-dependency
+    val key = System.getenv(("AWS_ACCESS_KEY_ID"))
+    val secret = System.getenv(("AWS_SECRET_ACCESS_KEY"))
+
+    spark.sparkContext.hadoopConfiguration.set("fs.s3a.access.key", key)
+    spark.sparkContext.hadoopConfiguration.set("fs.s3a.secret.key", secret)
+    spark.sparkContext.hadoopConfiguration.set("fs.s3a.endpoint", "s3.amazonaws.com")
+    
+    import spark.implicits._
+    spark.sparkContext.setLogLevel("WARN")
+
+    // Read in a Census CSV gathered from https://data.census.gov/cedsci/table?q=dp05&g=0100000US.04000.001&y=2019&tid=ACSDT1Y2019.B01003&moe=false&hidePreview=true
+    // This CSV was of 2019 1 year estimate for population in every state
+
+    val censusData = spark.read
+      .format("csv")
+      .option("header", "true")
+      .load("ACSDT1Y2019.B01003_data_with_overlays_2021-02-23T105100.csv")
+
+    // Created a State Code list for easier joining with additional warc data. 
+    val rawStateList = Seq(
+      ("AL", "Alabama"), ("AK", "Alaska"), ("AZ", "Arizona"), ("AR", "Arkansas"), ("CA", "California"), ("CO", "Colorado"), ("CT", "Connecticut"), ("DE", "Delaware"), 
+      ("DC", "District of Columbia"), ("FL", "Florida"), ("GA", "Georgia"), ("HI", "Hawaii"), ("ID", "Idaho"), ("IL", "Illinois"), ("IN", "Indiana"), ("IA", "Iowa"), 
+      ("KS", "Kansas"), ("KY", "Kentucky"), ("LA", "Louisiana"), ("ME", "Maine"), ("MD", "Maryland"), ("MA", "Massachusetts"), ("MI", "Michigan"), ("MN", "Minnesota"), 
+      ("MS", "Mississippi"), ("MO", "Missouri"), ("MT", "Montana"), ("NE", "Nebraska"), ("NV", "Nevada"), ("NH", "New Hampshire"), ("NJ", "New Jersey"), ("NM", "New Mexico"), 
+      ("NY", "New York"), ("NC", "North Carolina"), ("ND", "North Dakota"), ("OH", "Ohio"), ("OK", "Oklahoma"), ("OR", "Oregon"), ("PA", "Pennsylvania"), ("RI", "Rhode Island"), 
+      ("SC", "South Carolina"), ("SD", "South Dakota"), ("TN", "Tennessee"), ("TX", "Texas"), ("UT", "Utah"), ("VT", "Vermont"), ("VA", "Virginia"), ("WA", "Washington"), 
+      ("WV", "West Virginia"), ("WI", "Wisconsin"), ("WY", "Wyoming"))
+
+    val stateList = rawStateList.toDF("State Code", "State Name")
+
+    // Combined the two dataFrames to get state codes assocaited with area name.
+
+    val combinedCensusData = censusData.join(stateList, $"Geographic Area Name" === $"State Name")
+
+    // combinedCensusData
+    //   .select("State Name", "State Code", "Population Estimate Total")
+    //   .show()
+    
+    //fetch_time BETWEEN TIMESTAMP '2020-03-01 00:00:00' AND TIMESTAMP '2020-03-31 23:59:59'
+
+    // Read WET data from the Common Crawl s3 bucket
+    // Since WET is read in as one long text file, use lineSep to split on each header of WET record
+    val commonCrawl = spark.read.option("lineSep", "WARC/1.0").text(
+      "s3a://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575541319511.97/wet/CC-MAIN-20191216093448-20191216121448-00559.warc.wet.gz"
+    )
+    .as[String]
+    .map((str)=>{str.substring(str.indexOf("\n")+1)})
+    .toDF("cut WET")
+
+    // Splitting the header WARC data from the plain text content for WET files
+    val cuttingCrawl = commonCrawl
+      .withColumn("_tmp", split($"cut WET", "\r\n\r\n"))
+      .select($"_tmp".getItem(0).as("WARC Header"), $"_tmp".getItem(1).as("Plain Text"))
+  
+    // Below is filtering for only Tech Jobs
+    // First filter for URI's with career/job/employment
+    // Second filter makes sure all results returned have keys words for tech jobs
+    // This filters out non tech related jobs hat return from job in URI
+    val filterCrawl = cuttingCrawl
+      .filter($"WARC Header" rlike ".*WARC-Target-URI:.*career.*" 
+        or ($"WARC Header" rlike ".*WARC-Target-URI:.*/job.*") 
+        or ($"WARC Header" rlike ".*WARC-Target-URI:.*employment.*"))
+      .filter($"Plain Text" rlike ".*Frontend.*" 
+        or ($"Plain Text" rlike ".*Backendend.*") 
+        or ($"Plain Text" rlike ".*Fullstack.*")
+        or ($"Plain Text" rlike ".*Cybersecurity.*") 
+        or ($"Plain Text" rlike ".*Software.*") 
+        or ($"Plain Text" rlike ".*Computer.*"))
+      .select($"WARC Header", $"Plain Text")
+       
+
+    // Turning Dataframe into RDD in order to get Key-Value pairs of occurrences of State Codes
+    val sqlCrawl = filterCrawl
+    .select($"Plain Text").as[String].flatMap(line => line.split(" ")).rdd
+
+    val rddCrawl = sqlCrawl.map(word => (word, 1))
+    .filter({case (key, value) => key.length < 3})
+    .reduceByKey(_ + _)
+    .toDF("State Code", "Tech Job Total")
+
+    // Join earlier combinedCensusData Dataframe to rddCrawl Dataframe in order to determine 
+    // question: "Where do we see relatively fewer tech ads proportional to population?"
+    val combinedCrawl = rddCrawl.join(combinedCensusData,("State Code"))
+    .withColumn("Tech Ads Proportional to Population", round(($"Tech Job Total" / $"Population Estimate Total" * 100) , 8))
+    .select($"State Code", $"Geographic Area Name", $"Tech Job Total", $"Population Estimate Total", $"Tech Ads Proportional to Population")
+    .show(51, false)
+  
+  }
+
+}
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+No server running at 127.0.0.1:8212, let's fire one...
+Resolving ch.epfl.scala:bloop-frontend_2.12:1.4.8...
+Starting bloop server at 127.0.0.1:8212...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Loading 2 projects from '/home/delaneylekien/project3/scalas3read/.bloop'...
+[0m[32m[D][0m Loading project from '/home/delaneylekien/project3/scalas3read/.bloop/root-test.json'
+[0m[32m[D][0m Loading project from '/home/delaneylekien/project3/scalas3read/.bloop/root.json'
+[0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.11.12.
+[0m[32m[D][0m   => /home/delaneylekien/.cache/coursier/v1/https/repo1.maven.org/maven2/jline/jline/2.14.3/jline-2.14.3.jar
+[0m[32m[D][0m   => /home/delaneylekien/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.jar
+[0m[32m[D][0m   => /home/delaneylekien/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.jar
+[0m[32m[D][0m   => /home/delaneylekien/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.12/scala-compiler-2.11.12.jar
+[0m[32m[D][0m   => /home/delaneylekien/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar
+[0m[32m[D][0m   => /home/delaneylekien/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.12/scala-reflect-2.11.12.jar
+[0m[32m[D][0m Configured SemanticDB in projects 'root-test', 'root'
+[0m[32m[D][0m Loading previous analysis for 'root-test' from '/home/delaneylekien/project3/scalas3read/target/streams/test/bloopAnalysisOut/_global/streams/inc_compile_2.11.zip'.
+[0m[32m[D][0m Loading previous analysis for 'root' from '/home/delaneylekien/project3/scalas3read/target/streams/compile/bloopAnalysisOut/_global/streams/inc_compile_2.11.zip'.
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher4800353928263832945/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher4800353928263832945/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.03.08 10:30:42 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/delaneylekien/.cache/metals/bsp.trace.json[0m
+[0m2021.03.08 10:30:42 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher7573580538043102989/bsp.socket'...
+[0m2021.03.08 10:30:42 INFO  Attempting to connect to the build server...[0m
+Waiting for the bsp connection to come up...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher5640716321762562019/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher7573580538043102989/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher7573580538043102989/bsp.socket...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher5640716321762562019/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher5640716321762562019/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.03.08 10:30:43 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/delaneylekien/.cache/metals/bsp.trace.json[0m
+[0m2021.03.08 10:30:43 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/delaneylekien/.cache/metals/bsp.trace.json[0m
+[0m2021.03.08 10:30:43 INFO  time: Connected to build server in 7.77s[0m
+[0m2021.03.08 10:30:43 INFO  Connected to Build server: Bloop v1.4.8[0m
+java.util.concurrent.RejectedExecutionException: Task scala.concurrent.impl.CallbackRunnable@37a761ba rejected from java.util.concurrent.ThreadPoolExecutor@3957b6e2[Shutting down, pool size = 6, active threads = 6, queued tasks = 0, completed tasks = 87]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2063)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:830)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1379)
+	at scala.concurrent.impl.ExecutionContextImpl$$anon$4.execute(ExecutionContextImpl.scala:138)
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:72)
+	at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1(Promise.scala:288)
+	at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1$adapted(Promise.scala:288)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:288)
+	at scala.concurrent.Promise.complete(Promise.scala:53)
+	at scala.concurrent.Promise.complete$(Promise.scala:52)
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:187)
+	at scala.concurrent.java8.FuturesConvertersImpl$P.accept(FutureConvertersImpl.scala:99)
+	at scala.concurrent.java8.FuturesConvertersImpl$P.accept(FutureConvertersImpl.scala:97)
+	at java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:774)
+	at java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:750)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:1975)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:212)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m2021.03.08 10:32:03 INFO  Started: Metals version 0.10.0 in workspace '/home/delaneylekien/project3/scalas3read' for client vscode 1.54.1.[0m
+[0m2021.03.08 10:32:03 INFO  time: initialize in 0.46s[0m
+[0m2021.03.08 10:32:04 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher3966420768847684197/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m2021.03.08 10:32:03 WARN  no build target for: /home/delaneylekien/project3/scalas3read/src/main/scala/com/revature/scalas3read/Runner.scala[0m
+[0m2021.03.08 10:32:04 INFO  skipping build import with status 'Installed'[0m
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Loading 2 projects from '/home/delaneylekien/project3/scalas3read/.bloop'...
+[0m[32m[D][0m Loading project from '/home/delaneylekien/project3/scalas3read/.bloop/root.json'
+[0m[32m[D][0m Loading project from '/home/delaneylekien/project3/scalas3read/.bloop/root-test.json'
+[0m[32m[D][0m Configured SemanticDB in projects 'root', 'root-test'
+[0m[32m[D][0m Loading previous analysis for 'root-test' from '/home/delaneylekien/project3/scalas3read/target/streams/test/bloopAnalysisOut/_global/streams/inc_compile_2.11.zip'.
+[0m[32m[D][0m Loading previous analysis for 'root' from '/home/delaneylekien/project3/scalas3read/target/streams/compile/bloopAnalysisOut/_global/streams/inc_compile_2.11.zip'.
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher3966420768847684197/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher3966420768847684197/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.03.08 10:32:04 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/delaneylekien/.cache/metals/bsp.trace.json[0m
+[0m2021.03.08 10:32:04 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher2547410800851340375/bsp.socket'...
+[0m2021.03.08 10:32:04 INFO  Attempting to connect to the build server...[0m
+Waiting for the bsp connection to come up...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher2381483168467179719/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher2547410800851340375/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher2547410800851340375/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher2381483168467179719/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher2381483168467179719/bsp.socket...
+[0m2021.03.08 10:32:04 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/delaneylekien/.cache/metals/bsp.trace.json[0m
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.03.08 10:32:04 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/delaneylekien/.cache/metals/bsp.trace.json[0m
+[0m2021.03.08 10:32:04 INFO  time: Connected to build server in 0.78s[0m
+[0m2021.03.08 10:32:04 INFO  Connected to Build server: Bloop v1.4.8[0m
+[0m2021.03.08 10:32:06 INFO  no build target: using presentation compiler with only scala-library: 2.12.13[0m
+[0m2021.03.08 10:32:06 INFO  time: Imported build in 0.1s[0m
+package com.revature.scalas3read
+
+import org.apache.spark.sql.SparkSession
+import org.apache.spark.sql.types.StructType
+import org.apache.spark.sql.types.StringType
+import org.apache.spark.sql.functions
+import org.apache.spark.sql.types.IntegerType
+import com.google.flatbuffers.Struct
+import org.apache.spark.sql.types.StructField
+import org.apache.spark.sql.Row
+import scala.io.BufferedSource
+import java.io.FileInputStream
+import org.apache.spark.sql.functions.split
+import org.apache.spark.sql.functions.round 
+import java.util.Arrays
+import java.sql
+
+object Runner {
+  def main(args: Array[String]): Unit = {
+    val spark = SparkSession
+      .builder()
+      .appName("scalas3read")
+      .master("local[4]")
+      // .config("spark.debug.maxToStringFields", 100)
+      .getOrCreate()
+
+    // Reference: https://sparkbyexamples.com/spark/spark-read-text-file-from-s3/#s3-dependency
+    val key = System.getenv(("AWS_ACCESS_KEY_ID"))
+    val secret = System.getenv(("AWS_SECRET_ACCESS_KEY"))
+
+    spark.sparkContext.hadoopConfiguration.set("fs.s3a.access.key", key)
+    spark.sparkContext.hadoopConfiguration.set("fs.s3a.secret.key", secret)
+    spark.sparkContext.hadoopConfiguration.set("fs.s3a.endpoint", "s3.amazonaws.com")
+    
+    import spark.implicits._
+    spark.sparkContext.setLogLevel("WARN")
+
+    // Read in a Census CSV gathered from https://data.census.gov/cedsci/table?q=dp05&g=0100000US.04000.001&y=2019&tid=ACSDT1Y2019.B01003&moe=false&hidePreview=true
+    // This CSV was of 2019 1 year estimate for population in every state
+
+    val censusData = spark.read
+      .format("csv")
+      .option("header", "true")
+      .load("ACSDT1Y2019.B01003_data_with_overlays_2021-02-23T105100.csv")
+
+    // Created a State Code list for easier joining with additional warc data. 
+    val rawStateList = Seq(
+      ("AL", "Alabama"), ("AK", "Alaska"), ("AZ", "Arizona"), ("AR", "Arkansas"), ("CA", "California"), ("CO", "Colorado"), ("CT", "Connecticut"), ("DE", "Delaware"), 
+      ("DC", "District of Columbia"), ("FL", "Florida"), ("GA", "Georgia"), ("HI", "Hawaii"), ("ID", "Idaho"), ("IL", "Illinois"), ("IN", "Indiana"), ("IA", "Iowa"), 
+      ("KS", "Kansas"), ("KY", "Kentucky"), ("LA", "Louisiana"), ("ME", "Maine"), ("MD", "Maryland"), ("MA", "Massachusetts"), ("MI", "Michigan"), ("MN", "Minnesota"), 
+      ("MS", "Mississippi"), ("MO", "Missouri"), ("MT", "Montana"), ("NE", "Nebraska"), ("NV", "Nevada"), ("NH", "New Hampshire"), ("NJ", "New Jersey"), ("NM", "New Mexico"), 
+      ("NY", "New York"), ("NC", "North Carolina"), ("ND", "North Dakota"), ("OH", "Ohio"), ("OK", "Oklahoma"), ("OR", "Oregon"), ("PA", "Pennsylvania"), ("RI", "Rhode Island"), 
+      ("SC", "South Carolina"), ("SD", "South Dakota"), ("TN", "Tennessee"), ("TX", "Texas"), ("UT", "Utah"), ("VT", "Vermont"), ("VA", "Virginia"), ("WA", "Washington"), 
+      ("WV", "West Virginia"), ("WI", "Wisconsin"), ("WY", "Wyoming"))
+
+    val stateList = rawStateList.toDF("State Code", "State Name")
+
+    // Combined the two dataFrames to get state codes assocaited with area name.
+
+    val combinedCensusData = censusData.join(stateList, $"Geographic Area Name" === $"State Name")
+
+    // combinedCensusData
+    //   .select("State Name", "State Code", "Population Estimate Total")
+    //   .show()
+    
+    //fetch_time BETWEEN TIMESTAMP '2020-03-01 00:00:00' AND TIMESTAMP '2020-03-31 23:59:59'
+
+    // Read WET data from the Common Crawl s3 bucket
+    // Since WET is read in as one long text file, use lineSep to split on each header of WET record
+    val commonCrawl = spark.read.option("lineSep", "WARC/1.0").text(
+      "s3a://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575541319511.97/wet/CC-MAIN-20191216093448-20191216121448-00559.warc.wet.gz"
+    )
+    .as[String]
+    .map((str)=>{str.substring(str.indexOf("\n")+1)})
+    .toDF("cut WET")
+
+    // Splitting the header WARC data from the plain text content for WET files
+    val cuttingCrawl = commonCrawl
+      .withColumn("_tmp", split($"cut WET", "\r\n\r\n"))
+      .select($"_tmp".getItem(0).as("WARC Header"), $"_tmp".getItem(1).as("Plain Text"))
+  
+    // Below is filtering for only Tech Jobs
+    // First filter for URI's with career/job/employment
+    // Second filter makes sure all results returned have keys words for tech jobs
+    // This filters out non tech related jobs hat return from job in URI
+    val filterCrawl = cuttingCrawl
+      .filter($"WARC Header" rlike ".*WARC-Target-URI:.*career.*" 
+        or ($"WARC Header" rlike ".*WARC-Target-URI:.*/job.*") 
+        or ($"WARC Header" rlike ".*WARC-Target-URI:.*employment.*"))
+      .filter($"Plain Text" rlike ".*Frontend.*" 
+        or ($"Plain Text" rlike ".*Backendend.*") 
+        or ($"Plain Text" rlike ".*Fullstack.*")
+        or ($"Plain Text" rlike ".*Cybersecurity.*") 
+        or ($"Plain Text" rlike ".*Software.*") 
+        or ($"Plain Text" rlike ".*Computer.*"))
+      .select($"WARC Header", $"Plain Text")
+       
+
+    // Turning Dataframe into RDD in order to get Key-Value pairs of occurrences of State Codes
+    val sqlCrawl = filterCrawl
+    .select($"Plain Text").as[String].flatMap(line => line.split(" ")).rdd
+
+    val rddCrawl = sqlCrawl.map(word => (word, 1))
+    .filter({case (key, value) => key.length < 3})
+    .reduceByKey(_ + _)
+    .toDF("State Code", "Tech Job Total")
+
+    // Join earlier combinedCensusData Dataframe to rddCrawl Dataframe in order to determine 
+    // question: "Where do we see relatively fewer tech ads proportional to population?"
+    val combinedCrawl = rddCrawl.join(combinedCensusData,("State Code"))
+    .withColumn("Tech Ads Proportional to Population", round(($"Tech Job Total" / $"Population Estimate Total" * 100) , 8))
+    .select($"State Code", $"Geographic Area Name", $"Tech Job Total", $"Population Estimate Total", $"Tech Ads Proportional to Population")
+    .show(51, false)
+  
+  }
+
+}
+[0m2021.03.08 10:32:09 INFO  no build target: using presentation compiler with only scala-library: 2.12.13[0m
+package com.revature.scalas3read
+
+import org.apache.spark.sql.SparkSession
+import org.apache.spark.sql.types.StructType
+import org.apache.spark.sql.types.StringType
+import org.apache.spark.sql.functions
+import org.apache.spark.sql.types.IntegerType
+import com.google.flatbuffers.Struct
+import org.apache.spark.sql.types.StructField
+import org.apache.spark.sql.Row
+import scala.io.BufferedSource
+import java.io.FileInputStream
+import org.apache.spark.sql.functions.split
+import org.apache.spark.sql.functions.round 
+import java.util.Arrays
+import java.sql
+
+object Runner {
+  def main(args: Array[String]): Unit = {
+    val spark = SparkSession
+      .builder()
+      .appName("scalas3read")
+      // .master("local[4]")
+      // .config("spark.debug.maxToStringFields", 100)
+      .getOrCreate()
+
+    // Reference: https://sparkbyexamples.com/spark/spark-read-text-file-from-s3/#s3-dependency
+    val key = System.getenv(("AWS_ACCESS_KEY_ID"))
+    val secret = System.getenv(("AWS_SECRET_ACCESS_KEY"))
+
+    spark.sparkContext.hadoopConfiguration.set("fs.s3a.access.key", key)
+    spark.sparkContext.hadoopConfiguration.set("fs.s3a.secret.key", secret)
+    spark.sparkContext.hadoopConfiguration.set("fs.s3a.endpoint", "s3.amazonaws.com")
+    
+    import spark.implicits._
+    spark.sparkContext.setLogLevel("WARN")
+
+    // Read in a Census CSV gathered from https://data.census.gov/cedsci/table?q=dp05&g=0100000US.04000.001&y=2019&tid=ACSDT1Y2019.B01003&moe=false&hidePreview=true
+    // This CSV was of 2019 1 year estimate for population in every state
+
+    val censusData = spark.read
+      .format("csv")
+      .option("header", "true")
+      .load("ACSDT1Y2019.B01003_data_with_overlays_2021-02-23T105100.csv")
+
+    // Created a State Code list for easier joining with additional warc data. 
+    val rawStateList = Seq(
+      ("AL", "Alabama"), ("AK", "Alaska"), ("AZ", "Arizona"), ("AR", "Arkansas"), ("CA", "California"), ("CO", "Colorado"), ("CT", "Connecticut"), ("DE", "Delaware"), 
+      ("DC", "District of Columbia"), ("FL", "Florida"), ("GA", "Georgia"), ("HI", "Hawaii"), ("ID", "Idaho"), ("IL", "Illinois"), ("IN", "Indiana"), ("IA", "Iowa"), 
+      ("KS", "Kansas"), ("KY", "Kentucky"), ("LA", "Louisiana"), ("ME", "Maine"), ("MD", "Maryland"), ("MA", "Massachusetts"), ("MI", "Michigan"), ("MN", "Minnesota"), 
+      ("MS", "Mississippi"), ("MO", "Missouri"), ("MT", "Montana"), ("NE", "Nebraska"), ("NV", "Nevada"), ("NH", "New Hampshire"), ("NJ", "New Jersey"), ("NM", "New Mexico"), 
+      ("NY", "New York"), ("NC", "North Carolina"), ("ND", "North Dakota"), ("OH", "Ohio"), ("OK", "Oklahoma"), ("OR", "Oregon"), ("PA", "Pennsylvania"), ("RI", "Rhode Island"), 
+      ("SC", "South Carolina"), ("SD", "South Dakota"), ("TN", "Tennessee"), ("TX", "Texas"), ("UT", "Utah"), ("VT", "Vermont"), ("VA", "Virginia"), ("WA", "Washington"), 
+      ("WV", "West Virginia"), ("WI", "Wisconsin"), ("WY", "Wyoming"))
+
+    val stateList = rawStateList.toDF("State Code", "State Name")
+
+    // Combined the two dataFrames to get state codes assocaited with area name.
+
+    val combinedCensusData = censusData.join(stateList, $"Geographic Area Name" === $"State Name")
+
+    // combinedCensusData
+    //   .select("State Name", "State Code", "Population Estimate Total")
+    //   .show()
+    
+    //fetch_time BETWEEN TIMESTAMP '2020-03-01 00:00:00' AND TIMESTAMP '2020-03-31 23:59:59'
+
+    // Read WET data from the Common Crawl s3 bucket
+    // Since WET is read in as one long text file, use lineSep to split on each header of WET record
+    val commonCrawl = spark.read.option("lineSep", "WARC/1.0").text(
+      "s3a://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575541319511.97/wet/CC-MAIN-20191216093448-20191216121448-00559.warc.wet.gz"
+    )
+    .as[String]
+    .map((str)=>{str.substring(str.indexOf("\n")+1)})
+    .toDF("cut WET")
+
+    // Splitting the header WARC data from the plain text content for WET files
+    val cuttingCrawl = commonCrawl
+      .withColumn("_tmp", split($"cut WET", "\r\n\r\n"))
+      .select($"_tmp".getItem(0).as("WARC Header"), $"_tmp".getItem(1).as("Plain Text"))
+  
+    // Below is filtering for only Tech Jobs
+    // First filter for URI's with career/job/employment
+    // Second filter makes sure all results returned have keys words for tech jobs
+    // This filters out non tech related jobs hat return from job in URI
+    val filterCrawl = cuttingCrawl
+      .filter($"WARC Header" rlike ".*WARC-Target-URI:.*career.*" 
+        or ($"WARC Header" rlike ".*WARC-Target-URI:.*/job.*") 
+        or ($"WARC Header" rlike ".*WARC-Target-URI:.*employment.*"))
+      .filter($"Plain Text" rlike ".*Frontend.*" 
+        or ($"Plain Text" rlike ".*Backendend.*") 
+        or ($"Plain Text" rlike ".*Fullstack.*")
+        or ($"Plain Text" rlike ".*Cybersecurity.*") 
+        or ($"Plain Text" rlike ".*Software.*") 
+        or ($"Plain Text" rlike ".*Computer.*"))
+      .select($"WARC Header", $"Plain Text")
+       
+
+    // Turning Dataframe into RDD in order to get Key-Value pairs of occurrences of State Codes
+    val sqlCrawl = filterCrawl
+    .select($"Plain Text").as[String].flatMap(line => line.split(" ")).rdd
+
+    val rddCrawl = sqlCrawl.map(word => (word, 1))
+    .filter({case (key, value) => key.length < 3})
+    .reduceByKey(_ + _)
+    .toDF("State Code", "Tech Job Total")
+
+    // Join earlier combinedCensusData Dataframe to rddCrawl Dataframe in order to determine 
+    // question: "Where do we see relatively fewer tech ads proportional to population?"
+    val combinedCrawl = rddCrawl.join(combinedCensusData,("State Code"))
+    .withColumn("Tech Ads Proportional to Population", round(($"Tech Job Total" / $"Population Estimate Total" * 100) , 8))
+    .select($"State Code", $"Geographic Area Name", $"Tech Job Total", $"Population Estimate Total", $"Tech Ads Proportional to Population")
+    .show(51, false)
+  
+  }
+
+}
+Mar 08, 2021 10:32:10 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6
+[0m2021.03.08 10:32:10 INFO  compiling root (1 scala source)[0m
+[0m2021.03.08 10:32:11 WARN  Could not find java sources in Some(/usr/lib/jvm/java-8-openjdk-amd64). Java symbols will not be available.[0m
+[0m2021.03.08 10:32:12 INFO  time: indexed workspace in 6.54s[0m
+[0m2021.03.08 10:32:12 INFO  Deduplicating compilation of root from bsp client 'Metals 0.10.0' (since 8.263s)[0m
+[0m2021.03.08 10:32:12 INFO  compiling root (1 scala source)[0m
+package com.revature.scalas3read
+
+import org.apache.spark.sql.SparkSession
+import org.apache.spark.sql.types.StructType
+import org.apache.spark.sql.types.StringType
+import org.apache.spark.sql.functions
+import org.apache.spark.sql.types.IntegerType
+import com.google.flatbuffers.Struct
+import org.apache.spark.sql.types.StructField
+import org.apache.spark.sql.Row
+import scala.io.BufferedSource
+import java.io.FileInputStream
+import org.apache.spark.sql.functions.split
+import org.apache.spark.sql.functions.round 
+import java.util.Arrays
+import java.sql
+
+object Runner {
+  def main(args: Array[String]): Unit = {
+    val spark = SparkSession
+      .builder()
+      .appName("scalas3read")
+      // .master("local[4]")
+      // .config("spark.debug.maxToStringFields", 100)
+      .getOrCreate()
+
+    // Reference: https://sparkbyexamples.com/spark/spark-read-text-file-from-s3/#s3-dependency
+    val key = System.getenv(("AWS_ACCESS_KEY_ID"))
+    val secret = System.getenv(("AWS_SECRET_ACCESS_KEY"))
+
+    spark.sparkContext.hadoopConfiguration.set("fs.s3a.access.key", key)
+    spark.sparkContext.hadoopConfiguration.set("fs.s3a.secret.key", secret)
+    spark.sparkContext.hadoopConfiguration.set("fs.s3a.endpoint", "s3.amazonaws.com")
+    
+    import spark.implicits._
+    spark.sparkContext.setLogLevel("WARN")
+
+    // Read in a Census CSV gathered from https://data.census.gov/cedsci/table?q=dp05&g=0100000US.04000.001&y=2019&tid=ACSDT1Y2019.B01003&moe=false&hidePreview=true
+    // This CSV was of 2019 1 year estimate for population in every state
+
+    val censusData = spark.read
+      .format("csv")
+      .option("header", "true")
+      .load("ACSDT1Y2019.B01003_data_with_overlays_2021-02-23T105100.csv")
+
+    // Created a State Code list for easier joining with additional warc data. 
+    val rawStateList = Seq(
+      ("AL", "Alabama"), ("AK", "Alaska"), ("AZ", "Arizona"), ("AR", "Arkansas"), ("CA", "California"), ("CO", "Colorado"), ("CT", "Connecticut"), ("DE", "Delaware"), 
+      ("DC", "District of Columbia"), ("FL", "Florida"), ("GA", "Georgia"), ("HI", "Hawaii"), ("ID", "Idaho"), ("IL", "Illinois"), ("IN", "Indiana"), ("IA", "Iowa"), 
+      ("KS", "Kansas"), ("KY", "Kentucky"), ("LA", "Louisiana"), ("ME", "Maine"), ("MD", "Maryland"), ("MA", "Massachusetts"), ("MI", "Michigan"), ("MN", "Minnesota"), 
+      ("MS", "Mississippi"), ("MO", "Missouri"), ("MT", "Montana"), ("NE", "Nebraska"), ("NV", "Nevada"), ("NH", "New Hampshire"), ("NJ", "New Jersey"), ("NM", "New Mexico"), 
+      ("NY", "New York"), ("NC", "North Carolina"), ("ND", "North Dakota"), ("OH", "Ohio"), ("OK", "Oklahoma"), ("OR", "Oregon"), ("PA", "Pennsylvania"), ("RI", "Rhode Island"), 
+      ("SC", "South Carolina"), ("SD", "South Dakota"), ("TN", "Tennessee"), ("TX", "Texas"), ("UT", "Utah"), ("VT", "Vermont"), ("VA", "Virginia"), ("WA", "Washington"), 
+      ("WV", "West Virginia"), ("WI", "Wisconsin"), ("WY", "Wyoming"))
+
+    val stateList = rawStateList.toDF("State Code", "State Name")
+
+    // Combined the two dataFrames to get state codes assocaited with area name.
+
+    val combinedCensusData = censusData.join(stateList, $"Geographic Area Name" === $"State Name")
+
+    // combinedCensusData
+    //   .select("State Name", "State Code", "Population Estimate Total")
+    //   .show()
+    
+    //fetch_time BETWEEN TIMESTAMP '2020-03-01 00:00:00' AND TIMESTAMP '2020-03-31 23:59:59'
+
+    // Read WET data from the Common Crawl s3 bucket
+    // Since WET is read in as one long text file, use lineSep to split on each header of WET record
+    val commonCrawl = spark.read.option("lineSep", "WARC/1.0").text(
+      "s3a://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575541319511.97/wet/CC-MAIN-20191216093448-20191216121448-00559.warc.wet.gz"
+    )
+    .as[String]
+    .map((str)=>{str.substring(str.indexOf("\n")+1)})
+    .toDF("cut WET")
+
+    // Splitting the header WARC data from the plain text content for WET files
+    val cuttingCrawl = commonCrawl
+      .withColumn("_tmp", split($"cut WET", "\r\n\r\n"))
+      .select($"_tmp".getItem(0).as("WARC Header"), $"_tmp".getItem(1).as("Plain Text"))
+  
+    // Below is filtering for only Tech Jobs
+    // First filter for URI's with career/job/employment
+    // Second filter makes sure all results returned have keys words for tech jobs
+    // This filters out non tech related jobs hat return from job in URI
+    val filterCrawl = cuttingCrawl
+      .filter($"WARC Header" rlike ".*WARC-Target-URI:.*career.*" 
+        or ($"WARC Header" rlike ".*WARC-Target-URI:.*/job.*") 
+        or ($"WARC Header" rlike ".*WARC-Target-URI:.*employment.*"))
+      .filter($"Plain Text" rlike ".*Frontend.*" 
+        or ($"Plain Text" rlike ".*Backendend.*") 
+        or ($"Plain Text" rlike ".*Fullstack.*")
+        or ($"Plain Text" rlike ".*Cybersecurity.*") 
+        or ($"Plain Text" rlike ".*Software.*") 
+        or ($"Plain Text" rlike ".*Computer.*"))
+      .select($"WARC Header", $"Plain Text")
+       
+
+    // Turning Dataframe into RDD in order to get Key-Value pairs of occurrences of State Codes
+    val sqlCrawl = filterCrawl
+    .select($"Plain Text").as[String].flatMap(line => line.split(" ")).rdd
+
+    val rddCrawl = sqlCrawl.map(word => (word, 1))
+    .filter({case (key, value) => key.length < 3})
+    .reduceByKey(_ + _)
+    .toDF("State Code", "Tech Job Total")
+
+    // Join earlier combinedCensusData Dataframe to rddCrawl Dataframe in order to determine 
+    // question: "Where do we see relatively fewer tech ads proportional to population?"
+    val combinedCrawl = rddCrawl.join(combinedCensusData,("State Code"))
+    .withColumn("Tech Ads Proportional to Population", round(($"Tech Job Total" / $"Population Estimate Total" * 100) , 8))
+    .select($"State Code", $"Geographic Area Name", $"Tech Job Total", $"Population Estimate Total", $"Tech Ads Proportional to Population")
+    .show(51, false)
+  
+  }
+
+}
+[0m2021.03.08 10:32:20 INFO  time: code lens generation in 15s[0m
+[0m2021.03.08 10:32:23 INFO  time: compiled root in 10s[0m

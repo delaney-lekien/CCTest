@@ -20,7 +20,7 @@ object Runner {
     val spark = SparkSession
       .builder()
       .appName("scalas3read")
-      .master("local[4]")
+      // .master("local[4]")
       // .config("spark.debug.maxToStringFields", 100)
       .getOrCreate()
 
@@ -68,7 +68,7 @@ object Runner {
     // Read WET data from the Common Crawl s3 bucket
     // Since WET is read in as one long text file, use lineSep to split on each header of WET record
     val commonCrawl = spark.read.option("lineSep", "WARC/1.0").text(
-      "s3a://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575541319511.97/wet/CC-MAIN-20191216093448-20191216121448-00559.warc.wet.gz"
+      "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575541319511.97/wet/CC-MAIN-20191216093448-20191216121448-00559.warc.wet.gz"
     )
     .as[String]
     .map((str)=>{str.substring(str.indexOf("\n")+1)})
